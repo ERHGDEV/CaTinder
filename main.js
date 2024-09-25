@@ -98,6 +98,20 @@ document.addEventListener('mousedown', startDrag)
 document.addEventListener('touchstart', startDrag, { passive: true })
 
 document.addEventListener('DOMContentLoaded', async () => {
-    catData = await fetchCats() 
-    catData.forEach(cat => createCard(cat)) 
+  const loader = document.getElementById('loading')
+  const mainContent = document.getElementById('main-content')
+
+  const undoButton = document.querySelector('.is-undo')
+
+  catData = await fetchCats() 
+  catData.forEach(cat => createCard(cat))
+
+  setTimeout(() => {
+    mainContent.style.opacity = 1
+    loader.style.display = 'none'
+  }, 1000)
+  
+  undoButton.addEventListener('click', () => {
+    window.location.reload()
+  })
 })

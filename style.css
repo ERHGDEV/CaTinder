@@ -14,6 +14,14 @@ body {
   background: #efefef;
 }
 
+#loading {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: #efefef;
+}
+
 main {
   background: url('/iphone.webp') no-repeat;
   background-size: contain;

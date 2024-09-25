@@ -9,30 +9,31 @@
     <script src="./main.js" type="module"></script>
 </head>
 <body>
-    <main>
-        <section>
-            <header>
-                <img 
-                    src="/cat.svg" 
-                    alt="Tinder Logo"
-                >
-            </header>
+  <div id="loading">Buscando gatos en tu zona...</div>
+  <main id="main-content" style="opacity: 0;">
+    <section>
+      <header>
+        <img 
+          src="/cat.svg" 
+          alt="Tinder Logo"
+        >
+      </header>
 
-            <div class="cards">
-                <span>
-                    No hay más gatos cerca de ti...<br>
-                    Vuelve a intentarlo más tarde. 
-                </span>
-            </div>
+      <div class="cards">
+        <span>
+          No hay más gatos cerca de ti...<br>
+          Vuelve a intentarlo más tarde. 
+        </span>
+      </div>
 
-            <footer>
-                <button class="is-undo" aria-label="undo"></button>
-                <button class="is-remove is-big" aria-label="close"></button>
-                <button class="is-star" aria-label="star"></button>
-                <button class="is-fav is-big" aria-label="fav"></button>
-                <button class="is-zap" aria-label="zap"></button>
-            </footer>
-        </section>
-    </main>
+      <footer>
+        <button class="is-undo" aria-label="undo"></button>
+        <button class="is-remove is-big" aria-label="close"></button>
+        <button class="is-star" aria-label="star"></button>
+        <button class="is-fav is-big" aria-label="fav"></button>
+        <button class="is-zap" aria-label="zap"></button>
+      </footer>
+    </section>
+  </main>
 </body>
 </html>
